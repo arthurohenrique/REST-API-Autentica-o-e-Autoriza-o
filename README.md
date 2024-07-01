@@ -1,6 +1,6 @@
 # REST-API Autenticacao e Autorizacao
 
-Endpoints
+# Endpoints
 
     POST /login: Autentica um usuário e retorna um token JWT.
     GET /username/{token}: Extrai o nome de usuário de um token JWT fornecido.
@@ -9,10 +9,10 @@ Endpoints
     GET /moderado: Restrito a usuários com o papel "MODERADO".
     GET /comum: Restrito a usuários com o papel "COMUM".
 
-Autenticação <br/>
+# Autenticação <br/>
 Esta API utiliza JSON Web Token (JWT) como método de autenticação. Após um usuário ser autenticado via /login, um token JWT é gerado e deve ser usado para acessar endpoints protegidos.
 
-Estrutura <br/>
+# Estrutura <br/>
 
 A API está organizada da seguinte forma:
 
@@ -22,7 +22,7 @@ A API está organizada da seguinte forma:
     security: Classes utilitárias para operações relacionadas ao JWT.
     service: Serviços que contêm a lógica de negócios.
 
-Principais Componentes <br/>
+# Principais Componentes <br/>
 
 Pontos de entrada da aplicação <br/>
 
@@ -49,7 +49,7 @@ Service <br/>
     AuthService: Fornece métodos para gerar tokens JWT e extrair nomes de usuário dos tokens.
 
 
-Exemplos de requisição <br/>
+# Exemplos de requisição <br/>
 
 Requisição de Login <br/>
 

@@ -9,5 +9,5 @@ Endpoints
     GET /moderado: Restrito a usuários com o papel "MODERADO".
     GET /comum: Restrito a usuários com o papel "COMUM".
 
-Autenticação
+Autenticação <br/> 
 Esta API utiliza JSON Web Token (JWT) como método de autenticação. Após um usuário ser autenticado via /login, um token JWT é gerado e deve ser usado para acessar endpoints protegidos.

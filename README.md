@@ -47,3 +47,18 @@ Security <br/>
 Service <br/>
 
     AuthService: Fornece métodos para gerar tokens JWT e extrair nomes de usuário dos tokens.
+
+
+Exemplos de requisição <br/>
+
+Requisição de Login <br/>
+
+curl -X POST http://localhost:8080/login -H "Content-Type: application/json" -d '{"username": "giovanna", "password": "0311"}'
+
+Extrair nome de usuário <br/>
+
+curl -X GET http://localhost:8080/username/{token}
+
+Acessar endpoint do administrador <br/>
+
+curl -X GET http://localhost:8080/admin -H "Authorization: Bearer {token}"

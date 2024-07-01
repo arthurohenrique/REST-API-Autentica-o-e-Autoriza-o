@@ -62,3 +62,10 @@ curl -X GET http://localhost:8080/username/{token}
 Acessar endpoint do administrador <br/>
 
 curl -X GET http://localhost:8080/admin -H "Authorization: Bearer {token}"
+
+
+# Diagrama
+
+
+![image](https://github.com/arthurohenrique/REST-API-Autenticacao-e-Autorizacao/assets/61984909/86de35f4-7522-4e42-8d8e-259e0002f7f8)
+
